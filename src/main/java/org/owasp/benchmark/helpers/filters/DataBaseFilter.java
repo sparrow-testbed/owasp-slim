@@ -27,6 +27,7 @@ public class DataBaseFilter implements Filter {
 
 		filterChain.doFilter(request, response);
 
+		/*
 		try {
 			org.owasp.benchmark.helpers.DatabaseHelper.getSqlConnection().rollback();
 		} catch (SQLException e) {
@@ -36,6 +37,8 @@ public class DataBaseFilter implements Filter {
 			} else
 				throw new ServletException(e);
 		}
+		*/
+		// Do nothing
 
 	}
 
